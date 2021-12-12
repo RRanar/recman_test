@@ -16,7 +16,7 @@ class Viewer {
 
     public static function render(
         string $view,
-        array $content,
+        array $content = [],
         string $layout = ''
     )
     {

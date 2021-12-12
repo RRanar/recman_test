@@ -75,4 +75,9 @@ class Request {
         return $this->path;
     }
 
+    public function getBody():string
+    {
+        return $this->body;
+    }
+
 }

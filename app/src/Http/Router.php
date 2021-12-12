@@ -21,7 +21,7 @@ class Router {
 
         foreach (self::$paths[$requestMethod] as $path=>$callback) {
             if ($path == $requestPath) {
-                return call_user_func($callback);
+                return call_user_func_array($callback, [self::$request]);
             }
         }
 
